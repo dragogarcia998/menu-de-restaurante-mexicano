@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu of Mexican Delights</title>
+</head>
+<body>
+
+    <!-- 1. Encabezado -->
+    <header>
+        <img id="header-img" src="imagenes/restaurante.jpg" alt="Menu of Mexican Delights">
+        <h1>Menu of Mexican Delights</h1>
+        <p>¡Welcome! Explore our delicious selection of dishes.</p>
+        <nav>
+            <a href="#menu">Menú</a>
+            <a href="#order-form">Realice su pedido</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- 2. Contenido Principal -->
+    <main>
+        <!-- Sección del Menú -->
+        <section id="menu">
+            <h2>Menú</h2>
+            
+            <article>
+                <img src="https://www.pngwing.com/es/free-png" alt="guacamole with tortilla chips">
+                <h3>Guacamole with Tortilla Chips</h3>
+                <p>
+                    Smooth, fresh guacamole prepared in the traditional style, ready for dipping with crispy corn tortilla chips. 
+                    <i>$50.00</i>
+                </p>
+            </article>
+
+            <article>
+                <img src="https://www.projectcookbook.org/post/grilled-queso-panela-with-strawberry-jalape%C3%B1o-salsa-recipe" alt="grilled panela cheese">
+                <h3>Grilled Panela Cheese</h3>
+                <p>  
+                    Fresh panela cheese seared on the griddle with a touch of olive oil and spices, served with house-made salsa. 
+                    <i>$70.00</i>
+                </p>
+            </article>
+
+            <article>
+                <img src="https://www.pngwing.com/es/free-png" alt="choriqueso">
+                <h3>Choriqueso</h3>
+                <p>
+                    Plenty of stretchy, melted cheese loaded with golden-brown, crispy chorizo. Perfect for sharing! 
+                    <i>$80.00</i>
+                </p>
+            </article>
+        </section>
+        
+        <hr>
+
+        <!-- Sección de Realizar Pedido -->
+        <section id="order-form">
+            <h2>Realice su pedido</h2>
+            <form action="#" method="POST">
+                
+                <!-- Cantidad para cada elemento del menú (con validación min="0") -->
+                <label for="guacamole-qty">Guacamole with Tortilla Chips (Cantidad):</label><br>
+                <input type="number" id="guacamole-qty" name="guacamole_qty" min="0" value="0"><br><br>
+
+                <label for="panela-qty">Grilled Panela Cheese (Cantidad):</label><br>
+                <input type="number" id="panela-qty" name="panela_qty" min="0" value="0"><br><br>
+
+                <label for="choriqueso-qty">Choriqueso (Cantidad):</label><br>
+                <input type="number" id="choriqueso-qty" name="choriqueso_qty" min="0" value="0"><br><br>
+
+                <!-- Opciones adicionales con checkboxes -->
+                <p><strong>Acompañamientos extra:</strong></p>
+                <input type="checkbox" id="extra-tortillas" name="extras" value="tortillas">
+                <label for="extra-tortillas">Tortillas de maíz extra</label><br>
+                
+                <input type="checkbox" id="extra-salsa" name="extras" value="salsa">
+                <label for="extra-salsa">Salsa extra</label><br><br>
+
+                <!-- Solicitudes especiales -->
+                <label for="notas">Solicitudes especiales (alergias, sin cebolla, etc.):</label><br>
+                <textarea id="notas" name="notas" rows="4" cols="30"></textarea><br><br>
+
+                <!-- Botón de envío específico requerido -->
+                <button type="submit">Ir a la página de pago</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- 3. Pie de página requerido -->
+    <footer>
+        <p>Hecho con amor por [Tu_Usuario_De_Codedex]</p>
+    </footer>
+      
+</body>
+</html>
